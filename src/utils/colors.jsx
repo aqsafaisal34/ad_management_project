@@ -1,0 +1,5 @@
+export const COLOR_PRIMARY_BLUE = "#007bff"
+export const COLOR_PRIMARY_PURPLE = "#000716"
+export const COLOR_PRIMARY_GREEN = "green"
+export const COLOR_PRIMARY_RED = "red"
+export const COLOR_PRIMARY_ORANGE = "orange"
