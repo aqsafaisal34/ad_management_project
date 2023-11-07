@@ -9,12 +9,18 @@ import CompaignReach from "./CompaignReach"
 import CompaignFrequency from "./CompaignFrequency"
 import CompaignOutcomes from "./CompaignOutcomes"
 import Header from '../../components/header';
-import './index.css'
+import './index.css';
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+    const navigate = useNavigate();
+    const submitHandler = (e) =>{
+    e.preventDefault()
+    navigate('/plan-details')
+    }
     return (
         <> 
-        <Header title={"Dashboard"} button={"Plan Details"} />
+        <Header title={"Dashboard"} button={"Plan Details"} function={submitHandler}/>
         <Grid className="mt-3" gridDefinition={[{colspan: 4}, {colspan: 8}]}>
             <div>
                 <CompaignDetails/>

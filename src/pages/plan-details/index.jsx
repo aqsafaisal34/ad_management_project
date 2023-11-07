@@ -1,12 +1,19 @@
 import { Container, Grid, Header } from "@cloudscape-design/components"
 import PlanMetircs from "../create-plan/PlanMetircs"
 import PlanCalendar from "../create-plan/PlanCalendar";
-import Header1 from "../../components/header/index.jsx"
+import Header1 from "../../components/header/index.jsx";
+import { useNavigate } from "react-router-dom";
+
 
 const PlanDetails = () => {
+    const navigate = useNavigate();
+    const submitHandlerTwo = (e) =>{
+        e.preventDefault()
+        navigate('/create-plan')
+      }
     return (
         <> 
-        <Header1 title={"Plan Details"} button={"Create Plan"}/>
+        <Header1 title={"Plan Details"} button={"Create Plan"} function={submitHandlerTwo} />
         <div className="p-3">
             <Container header={<Header variant="h1">Plan Details</Header>}>
                 <Grid className="mt-1" gridDefinition={[{colspan: 3}, {colspan: 3}, {colspan: 3}, {colspan: 3}]}>

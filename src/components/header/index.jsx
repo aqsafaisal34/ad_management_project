@@ -15,7 +15,7 @@ const Header = (props) => {
             >
                 <Icon name="menu" variant="inverted" size="big"/>
                 <FlashAlert/>
-                <Icon name="status-info" variant="inverted" size="big"/>
+                {/* <Icon name="status-info" variant="inverted" size="big"/> */}
             </Grid>
             <Grid
                 gridDefinition={[{ colspan: 0.5 }, { colspan: 11 }, { colspan: 0.5 }]}
@@ -24,7 +24,7 @@ const Header = (props) => {
             <div></div>
             <div>
                 <BreadCrumb/>
-                <TitleSection title={props.title} button={props.button} />
+                <TitleSection title={props.title} button={props.button} function={props.function} />
             </div>
             <div></div>
             </Grid>

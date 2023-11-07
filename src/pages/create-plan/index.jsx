@@ -7,12 +7,18 @@ import Platform from "./Platform"
 import DayParts from "./DayParts"
 import AudienceSelection from "./AudienceSelection";
 import Header from '../../components/header';
+import { useNavigate } from "react-router-dom";
 
 
 const CreatePlan = () => {
-    return (
+    const navigate = useNavigate();
+    const submitHandlerTwo = (e) =>{
+        e.preventDefault()
+        navigate('/dashboard')
+      }
+    return ( 
         <>
-        <Header title={"Create Plan"} button={"Plan details"} />
+        <Header title={"Create Plan"} button={"Dashboard"} function={submitHandlerTwo}/>
         <Grid gridDefinition={[{colspan: 5}, {colspan: 6}]}>
             <div className="left-side">
                 <h2 className="font-weight-bold">Plan Setting</h2>
