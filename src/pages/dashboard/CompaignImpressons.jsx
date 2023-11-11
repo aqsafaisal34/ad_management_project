@@ -4,11 +4,13 @@ import {
     BarChart,
     Box,
     Button
-} from "@cloudscape-design/components"
+} from "@cloudscape-design/components";
+import './index.css';
+
 
 const CompaignImpressons = () => {
     return (
-        <Container className="mb-4" header={<Header variant="h3">Total Impressions By Paltform</Header>}>
+        <Container className="mb-4 addspacing" header={<Header variant="h3">Total Impressions By Paltform</Header>}>
             <BarChart
                 horizontalBars={true}
                 series={[

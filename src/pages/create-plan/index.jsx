@@ -8,6 +8,7 @@ import DayParts from "./DayParts"
 import AudienceSelection from "./AudienceSelection";
 import Header from '../../components/header';
 import { useNavigate } from "react-router-dom";
+import './style.css';
 
 
 const CreatePlan = () => {
@@ -21,7 +22,7 @@ const CreatePlan = () => {
         <Header title={"Create Plan"} button={"Dashboard"} function={submitHandlerTwo}/>
         <Grid gridDefinition={[{colspan: 5}, {colspan: 6}]}>
             <div className="left-side">
-                <h2 className="font-weight-bold">Plan Setting</h2>
+                <h2 className="font-weight-bold spacing">Plan Setting</h2>
                 <PlanSetting/>
                 <Platform/>
                 <DayParts/>

@@ -1,5 +1,12 @@
-.box {
+*{
+    box-sizing: border-box;
+}
+/* .box {
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+.header{
+    width: 100%;
+    margin: 20px 0;
 }

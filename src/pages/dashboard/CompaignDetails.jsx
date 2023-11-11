@@ -1,8 +1,9 @@
 import { Container, Grid, Header } from "@cloudscape-design/components"
+import './index.css'
 
 const CompaignDetails = () => {
     return (
-        <Container className="mb-4" header={<Header variant="h3">Compaign Name</Header>}>
+        <Container  className="mb-4 addspacing" header={<Header variant="h3">Compaign Name</Header>}>
             <p>Name ID:</p>
             <p>Status:</p>
             <Grid gridDefinition={[{colspan: 6}, {colspan: 6}]}>

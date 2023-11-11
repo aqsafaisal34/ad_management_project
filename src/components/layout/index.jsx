@@ -5,7 +5,7 @@ const Layout = ({children}) => {
     return <>
         <NavBar/>
       {/*  */}
-        <div style={{paddingTop: "30px", padding:"20px"}}>
+        <div>
             {children}
         </div>
     </>

@@ -1,10 +1,11 @@
 import { Container, FormField, Multiselect, RadioGroup } from "@cloudscape-design/components"
-import { useState } from "react"
+import { useState } from "react";
+import './style.css';
 
 const AudienceSelection = () => {
     const [selectedOptions, setSelectedOptions] = useState([])
     return (
-        <div className="mt-5">
+        <div className="mt-5 spacing">
             <Container className="p-3">
                 <FormField label="Audience Selection" className="w-50">
                     <RadioGroup className="d-flex justify-content-between align-items-center"

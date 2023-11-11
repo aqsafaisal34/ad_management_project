@@ -3,7 +3,7 @@ import MetircsCard from "../../components/metrics-card"
 
 const PlanMetircs = () => {
     return (
-        <div className="mt-5">
+        <div className="mt-5 addspacing">
             <Container header={<Header variant="h2">Projected Plan Metircs</Header>}>
                 <Grid gridDefinition={[{colspan: 6}, {colspan: 6}]} className="p-2 d-flex justify-content-between">
                     <div>

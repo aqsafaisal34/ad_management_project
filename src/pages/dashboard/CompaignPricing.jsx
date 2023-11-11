@@ -4,11 +4,13 @@ import {
     Button,
     Container, 
     Header 
-} from "@cloudscape-design/components"
+} from "@cloudscape-design/components";
+import './index.css';
+
 
 const CompaignPricing = () => {
     return (
-        <Container className="mb-4" header={<Header variant="h3">Net Media Cost Pricing</Header>} >
+        <Container className="mb-4 addspacing" header={<Header variant="h3">Net Media Cost Pricing</Header>} >
             <LineChart
                 series={[
                     {

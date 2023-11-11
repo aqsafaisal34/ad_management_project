@@ -1,6 +1,7 @@
 import { Container, Grid, Header } from "@cloudscape-design/components"
 import Slider from '@mui/material/Slider';
 import { useState } from "react";
+import './style.css';
 
 const Platform = () => {
     const [value, setValue] = useState([1, 100]);
@@ -10,7 +11,7 @@ const Platform = () => {
     };
 
     return (
-        <div className="mt-5">
+        <div className="mt-5 spacing">
             <Container className="p-3" header={<Header variant="h3">Platform</Header>}>
             <Slider
                 getAriaLabel={() => 'Temperature range'}

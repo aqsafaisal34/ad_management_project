@@ -6,10 +6,11 @@ import {
     Container, 
     Header 
 } from "@cloudscape-design/components";
+import './index.css';
 
 const CompaignAudience = () => {
   return (
-    <Container className="mb-4" header={<Header variant="h3">Audience% By Platform</Header>}>
+    <Container className="mb-4 addspacing" header={<Header variant="h3">Audience% By Platform</Header>}>
         <PieChart
             data={[
                 {

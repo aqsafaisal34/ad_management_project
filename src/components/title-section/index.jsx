@@ -21,6 +21,7 @@ const TitleSection = (props) => {
 
       <Header
         variant="h1"
+        
         actions={
           <SpaceBetween direction="horizontal" size="s">
             <Button variant="primary" onClick={props.function}>
@@ -28,7 +29,7 @@ const TitleSection = (props) => {
             </Button>
           </SpaceBetween>
         }
-        info={<Link variant="info">Info</Link>}
+       
         description="Page Description"
       >
         <div style={{display: "inline", color: "white"}}>{props.title}</div>

@@ -1,9 +1,10 @@
 import { Container, Grid, Header, Table } from "@cloudscape-design/components"
 import { COLOR_PRIMARY_BLUE, COLOR_PRIMARY_GREEN, COLOR_PRIMARY_RED } from "../../utils/colors"
+import './index.css';
 
 const CompaignTargetPerformance = () => {
     return (
-        <Container className="mb-4" header={<Header variant="h3">Compaign Target Performance</Header>} >
+        <Container className="mb-4 addspacing" header={<Header variant="h3">Compaign Target Performance</Header>} >
             <Container className="mb-4" variant="" header={<Header variant="h3">Impression Pricing Report</Header>} ></Container>
             <Container className="mb-4" variant="" header={<Header variant="h3">Currecy Comparison</Header>}>
                 <Grid gridDefinition={[{colspan: 2}, {colspan: 2}, {colspan: 2}, {colspan: 2}, {colspan: 2}, {colspan: 2}]}>

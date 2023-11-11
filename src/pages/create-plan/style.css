@@ -1,7 +1,14 @@
-.left-side {
+/* .left-side {
     margin-left: 20px;
 }
 
 .right-side {
     margin-left: 30px;
+} */
+.spacing{
+    margin: 0 15px;
+}
+.addspacing{
+    margin-bottom: 10px !important;
+    padding-bottom: 10px !important;
 }

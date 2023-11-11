@@ -16,24 +16,24 @@ const Dashboard = () => {
     const navigate = useNavigate();
     const submitHandler = (e) =>{
     e.preventDefault()
-    navigate('/plan-details')
+    navigate('/plan-list')
     }
     return (
         <> 
-        <Header title={"Dashboard"} button={"Plan Details"} function={submitHandler}/>
-        <Grid className="mt-3" gridDefinition={[{colspan: 4}, {colspan: 8}]}>
+        <Header title={"Dashboard"} button={"Plan List"} function={submitHandler}/>
+        <Grid className="mt-3 spacing" gridDefinition={[{colspan: 4}, {colspan: 8}]}>
             <div>
-                <CompaignDetails/>
-                <CompaignImpressons/>
-                <CompaignPricing/>
-                <CompaignAudience/>
+                <CompaignDetails />
+                <CompaignImpressons />
+                <CompaignPricing />
+                <CompaignAudience />
             </div>
             <div>
-                <CompaignPerformance/>
-                <CompaignTargetPerformance/>
-                <CompaignReach/>
-                <CompaignFrequency/>
-                <CompaignOutcomes/>
+                <CompaignPerformance />
+                <CompaignTargetPerformance />
+                <CompaignReach />
+                <CompaignFrequency />
+                <CompaignOutcomes />
             </div>
         </Grid>
         </>

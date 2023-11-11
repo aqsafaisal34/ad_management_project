@@ -8,13 +8,13 @@ import { COLOR_PRIMARY_PURPLE } from "../../utils/colors";
 const Header = (props) => {
    
     return (
-        <div style={{backgroundColor: COLOR_PRIMARY_PURPLE, padding: "10px 10px 20px 10px"}}>
+        <div  className="header" style={{backgroundColor: COLOR_PRIMARY_PURPLE}}>
             <Grid
                 gridDefinition={[{ colspan: 0.5 }, { colspan: 11 }, { colspan: 0.5 }]}
                 className="box"
             >
-                <Icon name="menu" variant="inverted" size="big"/>
-                <FlashAlert/>
+                {/* <Icon name="menu" variant="inverted" size="big"/> */}
+                {/* <FlashAlert/> */}
                 {/* <Icon name="status-info" variant="inverted" size="big"/> */}
             </Grid>
             <Grid

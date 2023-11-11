@@ -3,6 +3,7 @@ import PlanMetircs from "../create-plan/PlanMetircs"
 import PlanCalendar from "../create-plan/PlanCalendar";
 import Header1 from "../../components/header/index.jsx";
 import { useNavigate } from "react-router-dom";
+import './index.css'
 
 
 const PlanDetails = () => {
@@ -14,8 +15,8 @@ const PlanDetails = () => {
     return (
         <> 
         <Header1 title={"Plan Details"} button={"Create Plan"} function={submitHandlerTwo} />
-        <div className="p-3">
-            <Container header={<Header variant="h1">Plan Details</Header>}>
+        <div className="p-3 spacing">
+            <Container className="addspacing" header={<Header variant="h1">Plan Details</Header>}>
                 <Grid className="mt-1" gridDefinition={[{colspan: 3}, {colspan: 3}, {colspan: 3}, {colspan: 3}]}>
                     <div>
                         <p><strong>Plan Name:</strong> Lorem Empson</p>

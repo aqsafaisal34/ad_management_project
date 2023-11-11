@@ -1,13 +1,14 @@
-import { Header, Table } from "@cloudscape-design/components"
+import { Header, Table } from "@cloudscape-design/components";
+import './style.css';
 
 const PlanCalendar = () => {
     return (
         <Table
-            className="mt-5 p-4"
+            className="mt-5 p-4 addspacing"
             loadingText="Loading resources"
             sortingDisabled
             resizableColumns
-            header={<Header className="negative-margin"> Projected Calendar </Header>}
+            header={<Header > Projected Calendar </Header>}
             columnDefinitions={[
                 {
                     id: "column1",

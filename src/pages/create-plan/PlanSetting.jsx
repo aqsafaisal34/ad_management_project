@@ -1,8 +1,9 @@
 import { Container, DateInput, FormField, Input, RadioGroup, Select } from "@cloudscape-design/components"
+import './style.css';
 
 const PlanSetting = () => {
     return (
-        <Container className="mt-5 p-3">
+        <Container className="mt-5 p-3 spacing">
             <FormField label="Plan Name" className="mb-3">
                 <Input type="text" placeholder="Enter Plan Name"/>
             </FormField>
