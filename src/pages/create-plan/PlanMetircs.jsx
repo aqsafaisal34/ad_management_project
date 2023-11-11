@@ -1,5 +1,6 @@
 import { Container, Grid, Header } from "@cloudscape-design/components"
-import MetircsCard from "../../components/metrics-card"
+import MetircsCard from "../../components/metrics-card";
+import './style.css';
 
 const PlanMetircs = () => {
     return (
