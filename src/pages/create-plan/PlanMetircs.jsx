@@ -12,7 +12,7 @@ const PlanMetircs = () => {
                         <MetircsCard heading="Project Spend" text="$115,000"/>
                         <MetircsCard heading="Device Reach" text="100,000"/>
                     </div>
-                    <div>
+                    <div className="style">
                         <MetircsCard heading="Linear | Digital" text="27,000 / 35,000"/>
                         <MetircsCard heading="Frequency" text="500,000"/>
                         <MetircsCard heading="Projected Conversions" text="50,000"/>
