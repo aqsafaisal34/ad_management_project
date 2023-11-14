@@ -51,7 +51,7 @@ const PlanSetting = () => {
                     ]}
                 />
             </FormField>
-            <FormField label="Prodcut" className="mb-3 w-50">
+            <FormField label="Product" className="mb-3 w-50">
             <Select
                     options={[
                         { label: "Morning Show :30 Ad Spot", value: "Morning Show :30 Ad Spot" },

@@ -23,12 +23,11 @@ const Platform = () => {
                     <div>
                         <p className="text-left">Linear</p>
                         <p className="text-left">Digital</p>
-                        <p className="text-left">Other</p>
                     </div>
                     <div>
                         <p className="text-right">0%</p>
                         <p className="text-right">100%</p>
-                        <p className="text-right">0%</p>
+    
                     </div>
                 </Grid>
             </Container>

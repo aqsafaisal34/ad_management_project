@@ -16,6 +16,7 @@ const AudienceSelection = () => {
                     />
                 </FormField>
                 <FormField>
+                    
                     <Multiselect
                         placeholder="Choose options"
                         selectedOptions={selectedOptions}
@@ -24,11 +25,11 @@ const AudienceSelection = () => {
                         }
                         options={[
                             {
-                                label: "A25-49",
+                                label: "Travelling in past 2 years",
                                 value: "1",
                             },
                             {
-                                label: "A25-49 Owns a home",
+                                label: " Owns a Car",
                                 value: "2",
                             }
                         ]}

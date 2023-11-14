@@ -1,8 +1,21 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import TopNavigation from "@cloudscape-design/components/top-navigation";
 import Navigation from "../navigation-routes/index.jsx";
 
 const NavBar = () => {
+  const navigate = useNavigate()
+  const handleSignout = () => {
+    // Remove user data from local storage
+    console.log("clicked")
+    localStorage.removeItem("username");
+    localStorage.removeItem("password");
+    localStorage.removeItem("isLogin");
+    localStorage.setItem("isLogin", false)
+
+    // Navigate user to the login page
+   navigate("/login");
+  };
   return (
     <TopNavigation
       identity={{
@@ -46,9 +59,7 @@ const NavBar = () => {
           text: "Customer Name",
           description: "email@example.com",
           iconName: "user-profile",
-          items: [
-            { id: "signout", text: "Sign out" }
-          ]
+          items: [{ id: "signout", type: "button", text: "Sign out", onClick: handleSignout }]
         }
       ]}
     />

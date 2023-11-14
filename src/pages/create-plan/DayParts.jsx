@@ -7,9 +7,19 @@ const DayParts = () => {
             <Container className="p-3" header={<Header variant="h3">Day Parts</Header>}>
                 <RadioGroup
                     items={[
-                        { value: "All Day", label: "All Day" },
+                        { value: "All Day", label: "All Day  12:00am to 11:59pm" },
                         { value: "Early Morning", label: "Early Morning" },
-                        { value: "Custom", label: "Custom" }
+                        { value: "Daytime", label: "Daytime" },
+                        { value: "Early Fringe", label: "Early Fringe" },
+                        { value: "Early News", label: "Early News" },
+                        { value: "Prime Access", label: "Prime Access" },
+                        { value: "Prime Time", label: "Prime Time" },
+                        { value: "Prime Sunday", label: "Prime Sunday" },
+                        { value: "Late News", label: "Late News" },
+                        { value: "Late Fringe", label: "Late Fringe" },
+                        { value: "Overnight", label: "Prime Access" }, 
+                        { value: "Custom", label: "Custom" },
+
                     ]}
                 />
             </Container>
