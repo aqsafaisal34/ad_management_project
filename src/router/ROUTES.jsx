@@ -13,4 +13,4 @@ const ROUTES = [
     { key: 4, protected: true, path: "/plan-list", element: <PlanList/> },
 ]
 
-export default ROUTES
+export default ROUTES;

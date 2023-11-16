@@ -16,7 +16,8 @@ const Login = () => {
 
     const onSubmit = (e) => {
         e.preventDefault()
-        localStorage.setItem("username", username)
+        localStorage.setItem("username", username);
+        localStorage.setItem("password", password);
         localStorage.setItem("isLogin", true)
         navigate("/dashboard")
     }

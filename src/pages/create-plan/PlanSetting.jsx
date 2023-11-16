@@ -1,14 +1,19 @@
 import { Container, DateInput, FormField, Input, RadioGroup, Select } from "@cloudscape-design/components"
 import './style.css';
+import { useState } from "react";
 
 const PlanSetting = () => {
+    const[planName, setPlanName] = useState("")
+    const[budget, setBudget] = useState("")
+    localStorage.setItem("planName", planName);
+    localStorage.setItem("budget", budget);
     return (
         <Container className="mt-5 p-3 spacing">
             <FormField label="Plan Name" className="mb-3">
-                <Input type="text" placeholder="Enter Plan Name"/>
+                <Input type="text" placeholder="Enter Plan Name" onChange={(e) => setPlanName(e.target.value)} />
             </FormField>
             <FormField label="Budget" className="mb-3 w-50">
-                <Input placeholder="$5M"/>
+                <Input placeholder="$5M" type="number" onChange={(e) => setBudget(e.target.value)}/>
             </FormField>
             <FormField label="Currency" className="mb-3 w-50">
                 <RadioGroup
@@ -51,7 +56,7 @@ const PlanSetting = () => {
                     ]}
                 />
             </FormField>
-            <FormField label="Prodcut" className="mb-3 w-50">
+            <FormField label="Product" className="mb-3 w-50">
             <Select
                     options={[
                         { label: "Morning Show :30 Ad Spot", value: "Morning Show :30 Ad Spot" },
